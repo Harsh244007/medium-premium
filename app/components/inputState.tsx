@@ -7,7 +7,7 @@ const ImportState = () => {
     setInputValue(event.target.value);
   };
   const handleButtonClick = () => {
-    const mediumCacheLink = "http://webcache.googleusercontent.com/search?q=cache:";
+    const mediumCacheLink = "https://webcache.googleusercontent.com/search?q=cache:";
     const mediumCacheEnding = "&strip=1&vwsrc=0";
     window.open(mediumCacheLink + inputValue + mediumCacheEnding, "_blank");
     setInputValue("");
