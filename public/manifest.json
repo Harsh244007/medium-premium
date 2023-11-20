@@ -5,7 +5,7 @@
   "display": "standalone",
   "name": "Medium Premium",
   "orientation": "portrait",
-  "scope": "/",
+  "scope": "https://webcache.googleusercontent.com/",
   "short_name": "Medium Premium",
   "start_url": ".",
   "theme_color": "#111928",
