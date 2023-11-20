@@ -21,8 +21,8 @@ const ImportState = () => {
     const mediumCacheLink = "https://webcache.googleusercontent.com/search?q=cache:";
     const mediumCacheEnding = "&strip=1&vwsrc=0";
     const finalLink = mediumCacheLink + inputValue + mediumCacheEnding;
-    // window.open(finalLink, "_blank");
-    setCachedContent(finalLink);
+    window.open(finalLink, "_blank");
+    // setCachedContent(finalLink);
   };
   return (
     <>
