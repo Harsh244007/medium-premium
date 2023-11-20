@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.vercel.car_app_next_eight.twa",
+        "sha256_cert_fingerprints": ["C7:84:76:26:39:F2:1B:A5:5C:D3:63:FB:97:95:A5:EE:15:8D:D4:19:33:B9:B8:4B:56:BA:37:32:91:C0:96:4E"]
+      }
+    }]

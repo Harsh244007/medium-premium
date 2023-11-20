@@ -1,0 +1,46 @@
+{
+  "background_color": "#111928",
+  "description": "Medium Premium App",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Medium Premium",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "Medium Premium",
+  "start_url": ".",
+  "theme_color": "#111928",
+  "categories": [
+    "business"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "/fc3.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/fc3.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },{
+      "src": "/fc3.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/fc3.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": []
+}
