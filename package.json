@@ -13,7 +13,8 @@
     "next": "latest",
     "next-pwa": "^5.6.0",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-reader-view": "^1.2.0"
   },
   "devDependencies": {
     "@types/node": "latest",

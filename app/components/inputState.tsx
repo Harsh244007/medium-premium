@@ -1,16 +1,28 @@
 "use client";
 import { useState, ChangeEvent, memo } from "react";
+import ReaderView from "react-reader-view";
 
 const ImportState = () => {
   const [inputValue, setInputValue] = useState<string>("");
+  const [cachedContent, setCachedContent] = useState("");
+
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
   };
-  const handleButtonClick = () => {
+  const handleButtonClick = async () => {
+    // try {
+    //   const response = await fetch(`/api?link=${inputValue}`);
+    //   const data = await response.text();
+    //   setCachedContent(data);
+    //   setInputValue("");
+    // } catch (error) {
+    //   console.error("Error fetching content:", error);
+    // }
     const mediumCacheLink = "https://webcache.googleusercontent.com/search?q=cache:";
     const mediumCacheEnding = "&strip=1&vwsrc=0";
-    window.open(mediumCacheLink + inputValue + mediumCacheEnding, "_blank");
-    setInputValue("");
+    const finalLink = mediumCacheLink + inputValue + mediumCacheEnding;
+    // window.open(finalLink, "_blank");
+    setCachedContent(finalLink);
   };
   return (
     <>
@@ -28,6 +40,19 @@ const ImportState = () => {
       >
         Go now
       </button>
+      {cachedContent !== "" ? (
+        <ReaderView
+          url={cachedContent}
+          css={`
+            body {
+              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                "Helvetica Neue", sans-serif;
+            }
+          `}
+        />
+      ) : (
+        ""
+      )}
     </>
   );
 };
