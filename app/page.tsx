@@ -7,7 +7,7 @@ export default function Home() {
       <section className="mb-8 text-center flex gap-2 flex-col">
         <h1 className="text-3xl font-bold mb-4">Medium Premium Unlocker</h1>
         <h3 className="text-lg text-gray-600">Paste any Medium link below:</h3>
-        <ImportState />;
+        <ImportState />
       </section>
     </main>
   );
